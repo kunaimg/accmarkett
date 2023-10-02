@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem !important;
+  background-color: #2f3640;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  ul li {
+    list-style: none;
+    margin: 0 auto;
+  }
+  ul a {
+    font-size: 1.1rem;
+  }
+  .col-md-6 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footerlast {
+    margin-top: 3rem;
+    h6 {
+      color: gray;
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+    a {
+      margin-left: 2rem;
+    }
+  }
+  hr {
+    color: gray;
+  }
+}

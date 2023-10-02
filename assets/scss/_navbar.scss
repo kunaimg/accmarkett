@@ -1,0 +1,324 @@
+.navbarform {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  .recap {
+    margin-top: 2rem;
+  }
+  .g-recaptcha {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .modal-content {
+    width: 70%;
+    margin: 0 auto;
+
+    height: 70%;
+  }
+}
+.row {
+  width: 100%;
+}
+.navbar {
+  img {
+    height: 3rem;
+  }
+  .col-4 {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+  }
+  .col-8 {
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+  }
+  .loginleft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 1.2rem;
+  }
+  .login {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  button {
+    background-color: #341f97;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    border: none;
+
+    transform: translateX(-100%);
+    height: 100%;
+    transition: all linear 0.3s;
+  }
+  button:hover::before {
+    transform: translateX(0);
+    z-index: -1;
+  }
+  button:hover {
+    color: black;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  a::before {
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2px;
+    background-color: white;
+    transition: all ease-in-out 0.1s;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+  a:hover {
+    color: white;
+  }
+  p {
+    color: white;
+    margin-top: 0.8rem;
+  }
+}
+.form {
+  .col-md-8 {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 2rem auto;
+  }
+  .box1 {
+    border: solid white 0.3px;
+    padding: 0 2rem;
+    border-radius: 8rem;
+  }
+  .box1:hover {
+    cursor: pointer;
+  }
+  h6 {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  .formboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 2rem;
+
+    padding-bottom: 1rem;
+  }
+  .box1 {
+    height: 2.7rem;
+  }
+  .instagram {
+    background-color: #341f97;
+  }
+  p {
+    color: white;
+    padding-top: 0.3rem;
+  }
+  .formboxes::-webkit-scrollbar {
+    background-color: black;
+    height: 0.2rem;
+  }
+  .formboxes::-webkit-slider-thumb {
+    background-color: whitesmoke;
+    height: 0.2rem;
+  }
+  .col-8 {
+    padding: 0 2rem;
+  }
+  input {
+    background-color: white;
+    color: black;
+    border-radius: 1px;
+    width: 99%;
+    border-radius: 2px;
+
+    padding: 0.6rem 0.3rem;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  .input {
+    text-align: center;
+  }
+  .box {
+    padding: 0.6rem 0.3rem !important;
+
+    margin-bottom: 0.6rem;
+  }
+  .ver1:hover {
+    cursor: pointer;
+  }
+  .ver1 {
+    border: solid gray 2px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    i {
+      font-size: 1rem;
+      color: gray;
+      font-size: 1.8rem;
+    }
+
+    h6 {
+      color: gray;
+      font-size: 1.1rem;
+
+      margin-top: 0.5rem;
+    }
+  }
+  .clicked {
+    border: solid white 2px;
+    i {
+      color: green;
+    }
+    h6 {
+      color: white;
+    }
+  }
+  .verify {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .subscribes {
+    width: 100%;
+    background-color: white;
+    margin-top: -1.4rem;
+    border-radius: 3px;
+    padding-bottom: 0.4rem;
+
+    h6 {
+      color: black;
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+    }
+    .sub1 {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      padding: 0 1rem;
+      gap: 0.8rem;
+
+      input {
+        border: solid gray 0.8px;
+        padding: 0.5rem 1rem;
+      }
+      i {
+        font-size: 2rem;
+        color: black;
+
+        margin-top: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .subscribes1 {
+    margin-top: 2rem;
+  }
+  .subscribes3 {
+    margin-bottom: 2rem;
+  }
+  button {
+    background-color: #341f97;
+    border-radius: 10rem;
+    padding: 0.5rem 3rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10rem;
+    padding: 0.5rem 1rem;
+    border: none;
+
+    transform: translateX(-100%);
+    height: 100%;
+    transition: all linear 0.3s;
+  }
+  button:hover::before {
+    transform: translateX(0);
+    z-index: -1;
+  }
+  button:hover {
+    color: black;
+  }
+  .button {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+.sticky {
+  position: fixed !important;
+  width: 100%;
+  background-color: whitesmoke;
+  z-index: 3;
+  top: 0;
+  transition: all ease-in-out 0.3s;
+  a {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+  button:hover::before {
+    color: white !important;
+    background-color: #341f97;
+  }
+  button {
+    color: white !important;
+    background-color: black;
+  }
+}
