@@ -154,3 +154,17 @@
     font-weight: 500;
   }
 }
+
+.form {
+  & .box {
+    & select {
+      width: 100%;
+      padding: 0.555rem 0.5rem;
+      border-radius: 1px;
+    }
+    & :focus {
+      outline: none;
+      border: none;
+    }
+  }
+}

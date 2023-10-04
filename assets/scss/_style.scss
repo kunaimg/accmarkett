@@ -51,6 +51,26 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .navbar {
+    & button {
+      padding: 0.4rem 0.8rem !important;
+    }
+  }
+
+  .box2 button {
+    left: 32% !important;
+    top: 18% !important;
+    transform: translateY(-6rem);
+
+    opacity: 0;
+  }
+
+  .box1:hover .box2 button {
+    cursor: pointer;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    transform: translateY(0.9rem);
+  }
   .section2 {
     .col-sm-6 {
       width: 75%;
@@ -58,18 +78,35 @@
       margin-top: 1.5rem !important;
     }
   }
+  .modal-content {
+    width: 90% !important;
+    margin: 0 auto;
+
+    height: 70%;
+  }
+  .section2 {
+    & .col-sm-6 {
+      width: 90% !important;
+    }
+  }
 }
 @media screen and (max-width: 420px) {
   .section2 {
     .col-sm-6 {
-      width: 100%;
+      width: 100% !important;
     }
+  }
+  .modal-content {
+    width: 97% !important;
+    margin: 0 auto;
+
+    height: 70%;
   }
 
   .footer {
     ul a {
-      font-size: 1.9rem !important;
+      font-size: 0.8rem !important;
+      margin-left: 0.111rem;
     }
   }
 }
-// @imp font;

@@ -16,10 +16,6 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +24,7 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -40,12 +36,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <style>
-      .select2-container--default .select2-selection--multiple {
-        padding: 0.6rem 0;
-        font-weight: 700;
-      }
-    </style>
   </head>
   <body>
     <div class="navbarform">
@@ -116,14 +106,14 @@
           <div class="row mx-0">
             <div class="col-12">
               <div class="row mx-0">
-                <div class="col-sm-4 col-2">
+                <div class="col-sm-4 col-1 p-0">
                   <img
                     src="./assets/img/logo2.png"
                     alt=""
                     style="margin-top: 0.3rem"
                   />
                 </div>
-                <div class="col-sm-8 col-10">
+                <div class="col-sm-8 col-11">
                   <div class="loginleft">
                     <button
                       class="btn btn-primary"
@@ -154,7 +144,7 @@
             <div class="col-md-8 col-sm-12">
               <h6>Quick & Secure social media marketplace.</h6>
               <div class="formboxes">
-                <div class="box1 instagram">
+                <div class="box1 instagram" style="padding: 0.3rem 2rem">
                   <p>instagram</p>
                 </div>
                 <div class="box1">
@@ -185,11 +175,11 @@
                   <p>instagram</p>
                 </div>
               </div>
-              <div class="input">
+              <div class="input" style="padding: 0 0.2rem">
                 <input type="text" placeholder="Search by name" />
               </div>
               <div class="box">
-                <select id="mySelect" multiple style="width: 100%">
+                <select>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
                   <option value="option3">Option 3</option>
@@ -733,12 +723,6 @@
       </div>
     </div>
     <script>
-      $(document).ready(function () {
-        $("#mySelect").select2({
-          placeholder: "Select a state",
-          allowClear: true,
-        });
-      });
       window.addEventListener("scroll", () => {
         var header = document.querySelector(".navbar");
         header.classList.toggle("sticky", window.scrollY > 0);
